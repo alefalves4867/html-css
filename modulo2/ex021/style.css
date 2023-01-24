@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+@font-face {
+    font-family: 'Old Kingdom';
+    src: url('fonts/old_london/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#got1{
+    color: #D7BC59;
+}
+#got2{
+    color: rgb(128, 12, 12);
+    
+}
+
+header{
+    background-color: #AAA8AD;    
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 15px 30px 0px 30px;
+    border-radius: 8px;
+    box-shadow: 5px 4px 9px 1px rgba(0, 0, 0, 0.479);
+}
+
+
+body{
+    font-family: 'Old Kingdom';
+    background-image: linear-gradient(to top, #0D0D0D, #1E1F23, #3F3E3C, #59595B);
+    background-attachment: fixed; 
+    
+   
+    
+}
+
+main{
+    background-color: #AAA8AD;
+    padding: 15px;
+    margin: 10px 30px 0px 30px;
+    font-size: 30px;
+    text-align: justify;
+    border-radius: 10px 0px;
+    box-shadow: 5px 4px 9px 1px rgba(0, 0, 0, 0.479);
+}
+
+.hs{
+    background-color: #59595B;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.37);
+}
+
+.ps{
+    background-color: #59595b75;
+    padding: 10px;
+    margin: 6px 0px;
+}
+/*main{
+    text-align: justify;
+    padding: 0px 20px;
+    margin: 0px 20px 0px 20px;
+    
+}
+
+
+.sections{
+    background-color: #AAA8AD;
+    font-size: 30px;
+    margin: 0px;
+}
+.sec1, .sec2{
+    outline: 0px 25px;
+    outline-color: #AAA8AD;
+    outline-style: ;
+}
+*/
+.final{
+    background-color: #AAA8AD;
+    font-size: 28px;
+}
+
+.book{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.596);
+    font-weight: bold;
+}
+
+.book:hover{
+    text-decoration: underline;
+    color: rgb(128, 12, 12);
+}
+
+.ital{
+    font-style: italic;
+}

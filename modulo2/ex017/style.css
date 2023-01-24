@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    height: 100%;
+    background-image: linear-gradient(to right, 
+    #0f1020, #386150, 
+    #58b09c, #f8f1ff);
+    
+
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    Medidas absolutas 
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    Recomenda-se
+    px ou em
+
+    16px geralmente == 1em
+    */
+    font-size: 1.0625em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #0f1020;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0f1020;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}

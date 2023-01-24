@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/ /*Não utilizar nas configurações
+                        globais, pois vai afetar todo o documento*/
+}
+
+body{
+    height: 100%;
+    background-image: 
+    linear-gradient(to bottom,#6B5E11, #B8A01D, #EACB25, #EBCD26 );
+}
+
+main{
+    background-color: white; /*Fundo*/
+    border-radius: 10px;/*Arrendonda a página*/
+    box-shadow: 5px 5px 15px #6b5e119a;
+    width: 600px; /*Largura*/
+    padding: 10px; /*Acochoamento*/
+    margin: auto; /*Manda para outra posição na tela, 
+                    nesse caso "auto" centraliza*/
+}
+
+h1{
+    color: #6B5E11;
+    text-align: center;
+    text-shadow: 1px 1px 2px #3b3409d3;
+}
+
+h2{
+    color: #B8A01D;
+}
+
+p {
+    text-align: justify;
+}

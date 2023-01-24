@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Old Kingdom";
+    src: url("fonts/old_london/OldLondon.ttf") 
+    format("truetype");
+}
+
+#d1:hover{
+    background-color: black;
+}
+
+body{
+    font-family: Old Kingdom;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: #706C61;
+}
+h1{
+    text-align: center;
+    background-color: #0A202B;
+    color: #E5ECE9;
+}
+
+div{
+    display: inline-block;
+    background-color: #0A202B;
+    border: 1px solid #E5ECE9;
+    color: #E5ECE9;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+
+}
