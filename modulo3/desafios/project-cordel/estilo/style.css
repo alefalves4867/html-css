@@ -1,21 +1,46 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../fontes/Sriracha/Sriracha-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Passion';
+    src: url('../fontes/Passion_One/PassionOne-Bold.ttf') format('truetype');
+}
 *{
     margin: 0px;
     padding: 0px;
 }
-header{
-    background-color: black;
-    color: white;
-    padding: 20px;
+:root{
+    --fonte1: 'Sriracha', cursive;
+    --fonte2: 'Passion', cursive;
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: aqua;
+    background-image: url('../imagens/background001.jpg');
+    background-attachment: fixed;
+    font-family: var(--fonte1);
 }
 .hd{
     text-align: center;
 }
+header{
+    background-color: black;
+    color: white;
+    padding: 60px;
+    font-family: var(--fonte3);
+}
 header h1{
-    font-size: 60px;
+    font-size: 10vw;
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    font-style: normal;
+}
+#wt1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 14px;
+    font-size: 25px;
 }
 #md{
     font-size: 17px;
@@ -23,8 +48,8 @@ header h1{
 .wt{
     
     margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 14px;
     font-size: 25px;
 }
@@ -34,7 +59,7 @@ header h1{
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 14px;
-    max-width: 276px;
+    max-width: 20vw;
     font-size: 25px;
 }
 .sections{
@@ -43,12 +68,18 @@ header h1{
     margin-top: 20px;
 }
 
+#sec{
+    background-color: white;
+    margin-bottom: 20px;
+    
 
+}
 .section{
     background-color: white;
-    margin-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
 }
+
 
 footer{
     background-color: black;
@@ -56,14 +87,18 @@ footer{
     padding: 6px;
     font-size: 18px;
     text-align: center;
-    
+    font-family: var(--fonte3);
 }
 footer a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
+    
 }
 footer a:hover{
     text-decoration: underline;
-    
+
+}
+.wt, #wt1, .mi{
+font-size: 3.5vh;
 }
