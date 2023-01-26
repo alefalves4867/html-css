@@ -12,7 +12,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
-
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
         }
         td, th{
             border: 1px solid black;
@@ -21,6 +28,14 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
         .num{
             text-align: right;
@@ -32,6 +47,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -40,33 +56,151 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>
+            População das Unidade Fedarativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td class="num" name="valor">45 919 049</td>
+                <td scope="row">São Paulo</td>
+                <td class="num" name="valor" scope="row">45 919 049</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td class="num" name="valor">21 168 791</td>
+                <td scope="row">Minas Gerais</td>
+                <td class="num" name="valor"scope="row" >21 168 791</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num" name="valor">17 264 943</td>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td class="num" name="valor" scope="row">17 264 943</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num" id="total">000000000000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num" id="total" scope="row">000000000000</td>
             </tr>
         </tfoot>
-    </table>
+</table>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Officia deleniti cupiditate dolorum enim est quod omnis 
+            magnam voluptates unde nostrum quia quam, iste consequatur vitae dolores nam, numquam mollitia. Sequi.
+        Magni, itaque beatae dolor et excepturi mollitia expedita 
+        suscipit eius. Architecto sequi illo sed nihil dolorem, 
+        ipsum qui temporibus in exercitationem modi nostrum, cum 
+        rem porro praesentium blanditiis! Nisi, quis!
+        Porro dolorum iure eos magnam impedit id animi sequi quo cum 
+        ipsa, ad molestiae, reiciendis voluptas ipsam dolorem a 
+        accusantium. Corporis ab, reiciendis ipsum optio ducimus 
+        blanditiis ex voluptatum qui?
+        Quae, ullam. Dolor rerum soluta, explicabo culpa dolore 
+        et adipisci saepe, consequuntur quo, nobis commodi totam 
+        eum? Perferendis laboriosam, consequatur aperiam quibusdam 
+        officia quidem, reprehenderit obcaecati earum, vero repellat dolor.
+        Autem consectetur deleniti hic dolorem voluptates iure eum 
+        distinctio id cupiditate voluptatibus, quaerat error omnis, 
+        provident earum repellendus dolor minima? Recusandae natus 
+        incidunt debitis perferendis! Nam quae reprehenderit quaerat accusantium.
+        Architecto recusandae nulla sequi praesentium rem beatae, 
+        fugit dolore quas inventore molestiae, dolorem doloremque 
+        ducimus asperiores, aperiam neque voluptatum modi repellendus. Provident deserunt saepe optio accusamus perspiciatis repellendus aut earum.
+        Perspiciatis delectus eaque accusantium amet odio? Officia 
+        fugiat quidem soluta optio vero tenetur in illum, sapiente 
+        totam accusantium vitae aut et quae nostrum eaque est! Magnam 
+        deleniti commodi sit cumque!
+        Quasi obcaecati ab asperiores officiis, deleniti laudantium, 
+        labore quos itaque sint beatae maiores dicta dolores. Nulla 
+        reiciendis odio accusamus ex incidunt debitis fuga, aliquam 
+        praesentium maiores aperiam, autem quo numquam!
+        Ipsum recusandae, placeat nobis eos vel omnis delectus rem 
+        suscipit vero quaerat dolorum quia similique ipsa ratione 
+        soluta nemo laborum rerum tempora quidem quo commodi non. 
+        Sit quia vitae earum!
+        Voluptatibus, neque veniam impedit animi nostrum, et rem 
+        placeat aut corporis eveniet iusto assumenda nihil, vel 
+        officia magni laboriosam eius modi laudantium dicta 
+        consectetur aperiam cumque eaque amet similique! Placeat.</p>
+
     
 </body>
 </html>
