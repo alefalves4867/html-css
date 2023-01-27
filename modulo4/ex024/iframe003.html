@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.741);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+        }
+        p{
+            text-align: justify;
+            
+        }
+        iframe{
+            width: 90vw;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore asperiores vero qui accusantium dolorem, veritatis quae, perferendis quam quisquam est cumque architecto ipsa mollitia minima laboriosam saepe eaque deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro dolor nemo quaerat ipsam accusantium corporis itaque rerum dicta culpa, harum, illum enim adipisci, necessitatibus quidem beatae debitis laudantium ratione.</p>
+
+    <ul>
+        <li>
+            <a href="paginas-extras/pag001.html" target="frame">Primeira Página<a>
+        </li>
+        <li>
+            <a href="paginas-extras/pag002.html" target="frame">Segunda Página<a>
+        </li>
+
+        <li>
+            <a href="paginas-extras/pag003.html" target="frame">Terceira Página<a>
+        </li>
+    </ul>
+
+    <iframe  name="frame" frameborder="0" srcdoc="<h1>שלום עליכם!</h1>"></iframe>
+</body>
+</html>
