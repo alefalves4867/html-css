@@ -45,10 +45,28 @@
             <label for="imsg">Mensagem: </label><br>
             <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem..."></textarea>
         </p>
+
+        <p>
+            <label for="idade">Ano de Nascimento: </label>
+            <input type="number" name="idade" id="idade" oninput="calcular()">
+            <div id="res">
+
+            </div>
+
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <script>
+        function calcular(){
+            let a = document.querySelector('#idade')
+            let actual = new Date().getFullYear()
+            let b = actual - Number(a.value)
+            let res = document.querySelector("#res")
+            res.innerHTML = `A sua idade é de ${b} anos`
+        }
+    </script>
 </body>
 </html>
