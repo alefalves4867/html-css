@@ -1,3 +1,39 @@
 @charset "UTF-8";
 
 /*Estilo para a Tela*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    padding: 1em;
+    display: inline-block;
+    list-style-type: none;
+
+}
+li{
+    color: white;
+    background-color: darkblue;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-right: 5px;
+}
+main{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+p{
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 1.5em;
+}
