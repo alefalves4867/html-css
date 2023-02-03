@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propriedade flex-basis</title>
+    <title>Propriedade flex-shrink</title>
     <style>
         .item {
             margin: 5px;
             padding: 5px;
-
+            width: 150px;
             background: #447;
             text-align: center;
             font-size: 1em;
             color: #fff;
-            
+            flex: 1;
             
         }
 
@@ -23,8 +23,9 @@
             height: 500px;
             margin: auto;
             border: 1px solid #000;
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
             justify-content: center; /* eixo principal */
+            align-items: center;
             align-content: space-between; /* eixo secundário */
 
         }
@@ -55,8 +56,10 @@
             flex-grow: 1;
         }
 
-        base {
-            flex-basis: 0;
+        .base {
+            align-self: flex-end;
+           
+            
         }
     
         body {
@@ -67,12 +70,12 @@
 </head>
 <body>
     <div class="container flexivel horizontal ">
-        <div class="item tam0">Shalom 1</div>
-        <div class="item tam0">Shalom 2</div>
-        <div class="item tam0">Shalom 3</div>
-        <div class="item tam0">Shalom 4</div>
-        <div class="item tam0">Shalom 5</div>
-        <div class="item tam1">Shalom 6</div>
+        <div class="item base">Shalom 1</div>
+        <div class="item">Shalom 2</div>
+        <div class="item">Shalom 3</div>
+        <div class="item">Shalom 4</div>
+        <div class="item">Shalom 5</div>
+        <div class="item">Shalom 6</div>
     </div>
 </body>
 </html>
