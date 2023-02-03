@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade flex-grow</title>
+    <style>
+        .item {
+            margin: 5px;
+            padding: 5px;
+
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            
+            
+        }
+
+        .container {
+            max-width: 600px;
+            height: 500px;
+            margin: auto;
+            border: 1px solid #000;
+            flex-flow: column wrap;
+            justify-content: center; /* eixo principal */
+            align-content: space-between; /* eixo secundário */
+
+        }
+
+        .flexivel {
+            display: flex;
+
+
+        }
+
+        .horizontal {
+            flex-direction: row;
+        }
+
+        .vertical {
+            flex-direction: column;
+        }
+
+        .quebra {
+            flex-wrap: wrap;
+        }
+
+        .tam0 {
+            flex-grow: 0;
+        }
+
+        .tam1 {
+            flex-grow: 1;
+        }
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel horizontal ">
+        <div class="item tam0">Shalom 1</div>
+        <div class="item tam0">Shalom 2</div>
+        <div class="item tam0">Shalom 3</div>
+        <div class="item tam0">Shalom 4</div>
+        <div class="item tam0">Shalom 5</div>
+        <div class="item tam1">Shalom 6</div>
+    </div>
+</body>
+</html>
